@@ -34,7 +34,7 @@
 }
 
 .tooltip__image {
-	@include media-breakpoint-down(md) {
+	@include media-breakpoint-down(sm) {
 		height: 200px;
 		overflow: hidden;
 		&, img {
