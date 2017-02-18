@@ -13,11 +13,14 @@
 }
 
 .hero--post {
-	padding: 0;
 	margin-bottom: 30px;
 	height: 20vw;
 	max-height: 500px;
 	min-height: 200px;
+	padding: 0 5px;
+	@include media-breakpoint-up(md) {
+		padding: 0;
+	}
 }
 
 .hero__title {
