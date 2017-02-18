@@ -1,0 +1,76 @@
+// Colors
+$color1: #5A5A64;
+$color2: #23263B;
+$nav-color: #BFDEFE;
+$color4: #96AECD;
+$color5: #5E769F;
+$color-theology: #440028;
+$color-web: #2D8633;
+$color-else: #AA8E39;
+
+$brand-primary: $color2;
+//** Global textual link color.
+$link-color: $brand-primary !default;
+$link-decoration: underline !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color: $color5 !default;
+//** Link hover decoration.
+$link-hover-decoration: underline !default;
+
+// Global options
+$enable-flex: true;
+
+// Grid settings
+$main-sm-columns: 12;
+$sidebar-sm-columns: 4;
+$content-max-width: 700px;
+
+// Vendor variables
+$fa-font-path: '~font-awesome/fonts';
+
+//Font-families
+$open: 'Open Sans', sans-serif;
+$lato: 'Lato', sans-serif;
+
+$font-family-sans-serif: $lato;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
+
+$font-size-root: 21px !default;
+//$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+//$font-size-lg:   1rem !default;
+//$font-size-sm:   .9rem !default;
+//$font-size-xs:   .85rem !default;
+
+// Navs
+
+//$nav-item-margin:               .2rem !default;
+//$nav-item-inline-spacer:        1rem !default;
+//$nav-link-padding:              .5em 1em !default;
+//$nav-link-hover-bg:             $gray-lighter !default;
+//$nav-disabled-link-color:       $gray-light !default;
+
+//$nav-tabs-border-color:                       #ddd !default;
+//$nav-tabs-border-width:                       $border-width !default;
+//$nav-tabs-border-radius:                      $border-radius !default;
+//$nav-tabs-link-hover-border-color:            $gray-lighter !default;
+//$nav-tabs-active-link-hover-color:            $gray !default;
+//$nav-tabs-active-link-hover-bg:               $body-bg !default;
+//$nav-tabs-active-link-hover-border-color:     #ddd !default;
+//$nav-tabs-justified-link-border-color:        #ddd !default;
+//$nav-tabs-justified-active-link-border-color: $body-bg !default;
+
+//$nav-pills-border-radius:     $border-radius !default;
+//$nav-pills-active-link-color: $component-active-color !default;
+//$nav-pills-active-link-bg:    $component-active-bg !default;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: #fff !default;
+$body-color: #060606 !default;
+//$inverse-bg:    $gray-dark !default;
+//$inverse-color: $gray-lighter !default;
+

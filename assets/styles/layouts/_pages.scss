@@ -1,0 +1,66 @@
+.content {
+	height: 100%;
+	width: 100%;
+	.home & {
+		z-index: 10;
+		background: darken($color2, 15%);
+
+	}
+}
+
+.helper-text {
+	display: none;
+	@include media-breakpoint-up(md) {
+		padding-top: 30px;
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-family: $lato;
+	}
+}
+
+.helper-text__text {
+	font-size: large;
+}
+
+.helper-text__text, .helper-text__list {
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+}
+
+.helper-text__list {
+	list-style: none;
+	display: flex;
+	width: 50%;
+	max-width: 580px;
+	justify-content: space-between;
+}
+
+.helper-text__list-item {
+	display: flex;
+	align-items: center;
+}
+
+.helper-text__list-item--object {
+	border-radius: 50%;
+	height: 20px;
+	width: 20px;
+	margin-right: 12px;
+}
+
+.helper-text__list-item--theology {
+	@extend .helper-text__list-item--object;
+	border: 6px solid $color-theology;
+}
+
+.helper-text__list-item--web {
+	@extend .helper-text__list-item--object;
+	border: 6px solid $color-web;
+}
+
+.helper-text__list-item--else {
+	@extend .helper-text__list-item--object;
+	border: 6px solid $color-else;
+}

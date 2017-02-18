@@ -1,0 +1,89 @@
+html {
+	font-size: 18px;
+	@include media-breakpoint-up(md) {
+		font-size: $font-size-root;
+	}
+}
+
+body {
+	//font-family: $lato;
+	font-weight: 300;
+	font-style: normal;
+	line-height: 1.58em;
+	letter-spacing: -.003em;
+}
+
+//
+// Headings responsive font-size
+// --------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $lato;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: $font-size-h1 - 0.5rem;
+	@include media-breakpoint-up(sm) {
+		font-size: $font-size-h1 - 0.3rem;
+	}
+	@include media-breakpoint-up(md) {
+		font-size: $font-size-h1;
+	}
+}
+
+h2 {
+	font-size: $font-size-h2 - 0.3rem;
+	@include media-breakpoint-up(sm) {
+		font-size: $font-size-h2 - 0.1rem;
+	}
+	@include media-breakpoint-up(md) {
+		font-size: $font-size-h2;
+	}
+}
+
+h3 {
+	font-size: $font-size-h3 - 0.1rem;
+	@include media-breakpoint-up(sm) {
+		font-size: $font-size-h3;
+	}
+	@include media-breakpoint-up(md) {
+		font-size: $font-size-h3;
+	}
+}
+
+h4 {
+	font-size: $font-size-h4 - 0.1rem;
+	@include media-breakpoint-up(sm) {
+		font-size: $font-size-h4;
+	}
+	@include media-breakpoint-up(md) {
+		font-size: $font-size-h4;
+	}
+}
+
+html, body {
+	@include media-breakpoint-up(md) {
+		height: 100%;
+	}
+}
+
+.home .wrap, .home .main {
+	@include media-breakpoint-up(md) {
+		height: 100%;
+	}
+}
+
+.main {
+	padding-bottom: 10vw;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.wp-caption {
+	max-width: 100% !important;
+	width: auto !important;
+}

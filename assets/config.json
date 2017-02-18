@@ -1,0 +1,24 @@
+{
+  "entry": {
+    "main": [
+      "./scripts/main.js",
+      "./styles/main.scss"
+    ],
+    "customizer": [
+      "./scripts/customizer.js"
+    ]
+  },
+  "watch": [
+    "templates/**/*.php",
+    "src/**/*.php"
+  ],
+  "publicPath": "/wp-content/themes/irajala.com",
+  "devUrl": "http://omat.dev/sblogi",
+  "proxyUrl": "http://localhost:3000/sblogi",
+  "cacheBusting": "[name]_[hash:8]",
+  "browsers": [
+    "last 2 versions",
+    "android 4",
+    "opera 12"
+  ]
+}

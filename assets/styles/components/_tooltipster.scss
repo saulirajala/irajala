@@ -1,0 +1,68 @@
+.tooltip__templates {
+	@include media-breakpoint-up(md) {
+		position: absolute;
+		z-index: 999;
+		display: none;
+	}
+}
+
+.tooltipster-base {
+	position: absolute !important;
+	width: 60% !important;
+}
+
+.rotatory__article {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	@include media-breakpoint-up(md) {
+		flex-direction: row;
+	}
+}
+
+.tooltip__content {
+	padding: 15px;
+	width: 100%;
+	background: #fff;
+	color: #4D545D;
+	border: none;
+	box-shadow: 5px 6px 5px rgba(51, 51, 51, .02);
+	@include media-breakpoint-up(md) {
+		box-shadow: none;
+	}
+}
+
+.tooltip__image {
+	@include media-breakpoint-down(md) {
+		height: 200px;
+		overflow: hidden;
+		&, img {
+			width: 100%;
+		}
+		img {
+			margin-top: -25vw;
+		}
+	}
+}
+
+.tooltip__title {
+	margin: 0;
+}
+
+.tooltip__category {
+	margin: 0;
+	font-family: $lato;
+	margin-bottom: 1rem;
+	font-size: 80%;
+}
+
+.tooltip__category--theology {
+	color: $color-theology;
+}
+.tooltip__category--web {
+	color: $color-theology;
+}
+.tooltip__category--else {
+	color: $color-theology;
+}

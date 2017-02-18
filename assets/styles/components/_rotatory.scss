@@ -1,0 +1,223 @@
+//
+// Taken from JS Bin made by Jeffrey Way (Laracast)
+// http://jsbin.com/voziziware/edit?css,output
+// --------------------------------------------------
+
+
+// For debug
+// --------------------------------------------------
+.animation-paused {
+	animation-play-state: paused !important;
+}
+
+//
+// Archive-link
+// --------------------------------------------------
+.rotatory__archive {
+	z-index: 99;
+	order: 2;
+	width: 100%;
+	text-align: center;
+	@include media-breakpoint-up(md) {
+		width: auto;
+		order: 0;
+	}
+}
+
+.rotatory__text {
+	font-family: 'jaapokkisubtractregularRg';
+	padding: 15px;
+	color: #fff;
+	font-size: 4vw;
+	margin: 0;
+	text-shadow: 2px 2px $color2;
+	@include media-breakpoint-up(sm) {
+		font-size: 60px;
+	}
+
+	&:hover {
+		color: darken(#fff, 10%);
+	}
+	a {
+		color: inherit;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+//
+// Rotatory -block
+// --------------------------------------------------
+.rotatory__wrapper {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 18px;
+	@include media-breakpoint-up(md) {
+		padding-top: 0;
+	}
+}
+
+.rotatory {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	@include media-breakpoint-up(md) {
+		flex-direction: row;
+	}
+	&:hover .rotatory__object, &:hover .rotatory__post {
+		animation-play-state: paused;
+	}
+}
+
+.post__link {
+	display: none;
+	@include media-breakpoint-up(md) {
+		display: inline;
+	}
+}
+
+
+.rotatory__object {
+	margin-bottom: 15px;
+	width: 100%;
+	@include media-breakpoint-up(md) {
+		margin-bottom: 0;
+		border-radius: 50%;
+		width: 80px;
+		height: 80px;
+		background: transparent;
+		z-index: 0;
+		position: absolute;
+	}
+}
+
+.rotatory__post {
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	@include media-breakpoint-up(md) {
+		animation: rotate-reverse 45s linear infinite;
+	}
+
+	.rotatory__object--theology & {
+		border: 6px solid $color-theology;
+		background-size: cover;
+	}
+	.rotatory__object--web & {
+		border: 6px solid $color-web;
+		background-size: cover;
+	}
+	.rotatory__object--else & {
+		border: 6px solid $color-else;
+		background-size: cover;
+
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.rotatory__object--0 {
+		animation: rotate-0 45s linear infinite;
+	}
+	.rotatory__object--1 {
+		animation: rotate-1 45s linear infinite;
+	}
+	.rotatory__object--2 {
+		animation: rotate-2 45s linear infinite;
+	}
+	.rotatory__object--3 {
+		animation: rotate-3 45s linear infinite;
+	}
+}
+
+//
+// Animations
+// --------------------------------------------------
+@keyframes rotate-0 {
+	from {
+		transform: rotate(0deg) translate(-270px, 0px);
+	}
+	to {
+		transform: rotate(360deg) translate(-270px, 0px);
+	}
+}
+
+@keyframes rotate-1 {
+	from {
+		transform: rotate(0deg) translate(20px, -230px);
+	}
+	to {
+		transform: rotate(360deg) translate(20px, -230px);
+	}
+}
+
+@keyframes rotate-2 {
+	from {
+		transform: rotate(0deg) translate(190px, 20px);
+	}
+	to {
+		transform: rotate(360deg) translate(190px, 20px);
+	}
+}
+
+@keyframes rotate-3 {
+	from {
+		transform: rotate(0deg) translate(-20px, 150px);
+	}
+	to {
+		transform: rotate(360deg) translate(-20px, 150px);
+	}
+}
+
+@keyframes rotate-reverse {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+//
+// Rotatory__outline
+// --------------------------------------------------
+.rotatory__outline-wrap {
+	display: none;
+	@include media-breakpoint-up(md) {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+}
+
+.rotarory__outline {
+	position: absolute;
+	border-radius: 50%;
+	border: 2px dotted #fff;
+}
+
+.rotatory__outline--270 {
+	width: 270px * 2;
+	height: 270px * 2;
+}
+
+.rotatory__outline--230 {
+	width: 230px * 2;
+	height: 230px * 2;
+}
+
+.rotatory__outline--190 {
+	width: 190px * 2;
+	height: 190px * 2;
+}
+
+.rotatory__outline--150 {
+	width: 150px * 2;
+	height: 150px * 2;
+}

@@ -1,0 +1,20 @@
+.header {
+	background-color: #000;
+}
+
+.header .nav li {
+	@extend .nav-item;
+}
+
+.header .nav a {
+	@extend .nav-link;
+	color: $nav-color;
+	font-family: 'jaapokkisubtractregularRg';
+	//font-family: 'jaapokkienchanceregularRg';
+	text-transform: uppercase;
+}
+
+.nav {
+	justify-content: space-around;
+}
+

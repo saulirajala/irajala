@@ -1,0 +1,57 @@
+.ssba-wrap {
+	@include block-bottom();
+	padding-bottom: 30px;
+	&, & > div {
+		width: 100%;
+		max-width: $content-max-width;
+	}
+
+	& > div {
+		text-align: center;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	& > div > a:first-child {
+		display: none;
+	}
+
+	.ssba_facebook_share {
+		flex: 1 1 auto;
+		background-color: #3b5998;
+		border-bottom: 6px solid #3b5998;
+		&:hover {
+			border-bottom: 6px solid lighten(#3b5998, 30%);
+		}
+
+	}
+	.ssba_twitter_share {
+		flex: 1 1 auto;
+		background-color: #39a9e0;
+		border-bottom: 6px solid #39a9e0;
+		&:hover {
+			border-bottom: 6px solid lighten(#39a9e0, 30%);
+		}
+
+	}
+	.ssba_email_share {
+		flex: 1 1 auto;
+		background-color: #666666;
+		border-bottom: 6px solid #666666;
+		&:hover {
+			border-bottom: 6px solid lighten(#666666, 30%);
+		}
+
+	}
+	.ssba_linkedin_share {
+		flex: 1 1 auto;
+		background-color: #007fb1;
+		border-bottom: 6px solid #007fb1;
+		&:hover {
+			border-bottom: 6px solid lighten(#007fb1, 30%);
+		}
+		img {
+
+		}
+	}
+}

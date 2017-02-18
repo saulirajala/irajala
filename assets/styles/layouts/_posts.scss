@@ -1,0 +1,15 @@
+.type-post {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.entry-content {
+	@include block-bottom();
+	max-width: $content-max-width;
+}
+
+.react {
+	max-width: $content-max-width;
+	width: 100%;
+}

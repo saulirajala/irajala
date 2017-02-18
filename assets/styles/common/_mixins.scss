@@ -1,0 +1,5 @@
+@mixin block-bottom($margin: 30px) {
+	margin-bottom: $margin;
+	border-bottom: 1px solid #cecece;
+	border-radius: 0;
+}
