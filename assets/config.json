@@ -12,9 +12,9 @@
     "templates/**/*.php",
     "src/**/*.php"
   ],
-  "publicPath": "/wp-content/themes/irajala.com",
-  "devUrl": "http://omat.dev/sblogi",
-  "proxyUrl": "http://localhost:3000/sblogi",
+  "publicPath": "/wp-content/themes/dev-irajala/",
+  "devUrl": "http://omat.dev/",
+  "proxyUrl": "http://localhost:3000/",
   "cacheBusting": "[name]_[hash:8]",
   "browsers": [
     "last 2 versions",
