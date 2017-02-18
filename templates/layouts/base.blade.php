@@ -1,5 +1,5 @@
 <!doctype html>
-<html @php(language_attributes())>
+<html @php(language_attributes()) class="front-end">
 @include('partials.head')
 <body @php(body_class())>
 @php(do_action('get_header'))

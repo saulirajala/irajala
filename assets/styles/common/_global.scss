@@ -62,7 +62,7 @@ h4 {
 	}
 }
 
-html, body {
+html.front-end, body.home {
 	@include media-breakpoint-up(md) {
 		height: 100%;
 	}
